@@ -1,0 +1,8 @@
+{
+	"clapCounterTime" : 1000,
+	"sampleRate" : 22050,
+	"bufferSize" : 512,
+	"sensitivity" : 40,
+	"threshold" : 4
+	
+}

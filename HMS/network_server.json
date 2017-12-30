@@ -1,0 +1,23 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1451,
+    "supportedCommands" : [ {
+      "commandUri" : "listRunningModules",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "listStandbyModules",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "shutdownModule",
+      "parameterJson" : "{\"moduleID\":null,\"ipAddress\":null}",
+      "parameterClassName" : "de.deeps.hms.network.parameters.ShutdownModuleParameter"
+    } ]
+  },
+  "moduleType" : "NETWORK_SERVER",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

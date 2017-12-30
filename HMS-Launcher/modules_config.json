@@ -1,0 +1,28 @@
+{
+	"networkServerShutdownUrl": "http://192.168.178.36:1451/shutdownModule",
+	"modules": [{
+		"moduleID": "IR_REMOTE",
+		"commandDir": "E:/DropBox/Private/HMS/HMS/IRRemote",
+		"moduleStartCommand": "java -jar IRRemote.jar"	
+	},{
+		"moduleID": "AUDIO_PLAYER",
+		"commandDir": "E:/DropBox/Private/HMS/HMS/AudioPlayer",
+		"moduleStartCommand": "java -jar AudioPlayer.jar"	
+	},{
+		"moduleID": "DELAY",
+		"commandDir": "E:/DropBox/Private/HMS/HMS/Delay",
+		"moduleStartCommand": "java -jar Delay.jar"	
+	},{
+		"moduleID": "PC_MANAGER",
+		"commandDir": "E:/DropBox/Private/HMS/HMS/PCManager",
+		"moduleStartCommand": "java -jar PCManager.jar"	
+	},{
+		"moduleID": "RULE",
+		"commandDir": "E:/DropBox/Private/HMS/HMS/Rule",
+		"moduleStartCommand": "java -jar Rule.jar"	
+	},{
+		"moduleID": "AUDIO_X",
+		"commandDir": "E:/DropBox/Private/HMS/HMS/AudioX",
+		"moduleStartCommand": "java -jar AudioX.jar"	
+	}]
+}

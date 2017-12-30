@@ -1,0 +1,39 @@
+{
+  "isActive" : true,
+  "condition" : {
+    "comparator" : "EQUALS",
+    "inputClassType" : null,
+    "jsonAttributePath" : null,
+    "expectedValue" : null,
+    "commandURI" : "activation",
+    "attributeDataType" : "BOOLEAN"
+  },
+  "events" : [ {
+    "targetUrl" : "http://192.168.178.96:2316/sendWOL",
+    "content" : {
+      "targetMAC" : "90:2B:34:37:FB:4E",
+      "targetAddress" : "192.168.178.36"
+    }
+  }, {
+    "targetUrl" : "http://192.168.178.96:9171/pressButton",
+    "content" : {
+      "remoteName" : "light_ceiling",
+      "buttonName" : "POWER_ON"
+    }
+  }, {
+    "targetUrl" : "http://192.168.178.96:1814/pressButton",
+    "content" : {
+      "remoteName" : "desktop",
+      "buttonName" : "B_ON"
+    }
+  }, {
+    "targetUrl" : "http://192.168.178.96:4512/delay",
+    "content" : {
+      "delayInMS" : 2000,
+      "targetUrl" : "http://192.168.178.96:9171/pressButton",
+      "content" : "{\"remoteName\": \"subwoofer\",\"buttonName\": \"POWER_TOGGLE\"}"
+    }
+  } ],
+  "timeout" : 0,
+  "name" : "Activation"
+}

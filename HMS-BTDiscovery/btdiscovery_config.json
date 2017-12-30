@@ -1,0 +1,23 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 2204,
+    "supportedCommands" : [ {
+      "commandUri" : "registerListener",
+      "parameterJson" : "{\"deviceBTMac\":null,\"responseUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.btdiscovery.parameters.RegisterListenerParameter"
+    }, {
+      "commandUri" : "unregisterListener",
+      "parameterJson" : "{\"deviceBTMac\":null,\"responseUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.btdiscovery.parameters.UnregisterListenerParameter"
+    }, {
+      "commandUri" : "currentStatus",
+      "parameterJson" : "{\"deviceBTMac\":null}",
+      "parameterClassName" : "de.deeps.hms.btdiscovery.parameters.CurrentStatusParameter"
+    } ]
+  },
+  "moduleType" : "BT_DISCOVERY",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1631,
+    "supportedCommands" : [ {
+      "commandUri" : "listPrograms",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "startProgram",
+      "parameterJson" : "{\"programName\":null}",
+      "parameterClassName" : "de.deeps.hms.pcmanager.parameters.StartProgramParameter"
+    }, {
+      "commandUri" : "shutdown",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "standby",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "setVolume",
+      "parameterJson" : "{\"volume\":0,\"device\":null}",
+      "parameterClassName" : "de.deeps.hms.pcmanager.parameters.SetVolumeParameter"
+    }, {
+      "commandUri" : "changeOutputDevice",
+      "parameterJson" : "{\"outputDevice\":null}",
+      "parameterClassName" : "de.deeps.hms.pcmanager.parameters.ChangeOutputDeviceParameter"
+    } ]
+  },
+  "moduleType" : "PC_MANAGER",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

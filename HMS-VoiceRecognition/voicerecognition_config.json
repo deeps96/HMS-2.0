@@ -1,0 +1,15 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 2115,
+    "supportedCommands" : [ {
+      "commandUri" : "voiceRecognition",
+      "parameterJson" : "{\"duration\":0,\"responseUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.voicerecognition.parameters.VoiceRecognitionRequest"
+    } ]
+  },
+  "moduleType" : "VOICE_RECOGNITION",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1821,
+    "supportedCommands" : [ {
+      "commandUri" : "addRule",
+      "parameterJson" : "{\"rule\":null}",
+      "parameterClassName" : "de.deeps.hms.rules.parameters.AddRuleParameter"
+    }, {
+      "commandUri" : "removeRule",
+      "parameterJson" : "{\"name\":null}",
+      "parameterClassName" : "de.deeps.hms.rules.parameters.RemoveRuleParameter"
+    }, {
+      "commandUri" : "executeRule",
+      "parameterJson" : "{\"name\":null}",
+      "parameterClassName" : "de.deeps.hms.rules.parameters.ExecuteRuleParameter"
+    }, {
+      "commandUri" : "listRules",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "setStartEvents",
+      "parameterJson" : "{\"events\":null}",
+      "parameterClassName" : "de.deeps.hms.rules.parameters.SetStartEventsParameter"
+    }, {
+      "commandUri" : "setStopEvents",
+      "parameterJson" : "{\"events\":null}",
+      "parameterClassName" : "de.deeps.hms.rules.parameters.SetStopEventsParameter"
+    }, {
+      "commandUri" : "listStopEvents",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "listStartEvents",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    } ]
+  },
+  "moduleType" : "RULE",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

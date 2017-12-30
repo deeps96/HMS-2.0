@@ -1,0 +1,5 @@
+{
+	"programDictionary": {
+		"Spotify": "cmd /c call C:\\Users\\Deeps\\AppData\\Roaming\\Spotify\\Spotify.exe"
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1212,
+    "supportedCommands" : [ {
+      "commandUri" : "launchModule",
+      "parameterJson" : "{\"moduleID\":null}",
+      "parameterClassName" : "de.deeps.hms.launcher.parameters.LaunchModuleParameter"
+    }, {
+      "commandUri" : "listModules",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "launchAll",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "shutdownAll",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "shutdownModule",
+      "parameterJson" : "{\"moduleID\":null}",
+      "parameterClassName" : "de.deeps.hms.launcher.parameters.ShutdownModuleParameter"
+    } ]
+  },
+  "moduleType" : "LAUNCHER",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

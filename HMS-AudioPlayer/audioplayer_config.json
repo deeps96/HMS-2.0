@@ -1,0 +1,23 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1214,
+    "supportedCommands" : [ {
+      "commandUri" : "playAudio",
+      "parameterJson" : "{\"fileName\":null}",
+      "parameterClassName" : "de.deeps.hms.audioplayer.parameters.PlayAudioParameter"
+    }, {
+      "commandUri" : "listAudioFiles",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "stopPlayingAudio",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    } ]
+  },
+  "moduleType" : "AUDIO_PLAYER",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1814,
+    "supportedCommands" : [ {
+      "commandUri" : "pressButton",
+      "parameterJson" : "{\"remoteName\":null,\"buttonName\":null}",
+      "parameterClassName" : "de.deeps.hms.radioremote.parameters.PressButtonParameter"
+    }, {
+      "commandUri" : "listRemotes",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "listButtons",
+      "parameterJson" : "{\"remoteName\":null}",
+      "parameterClassName" : "de.deeps.hms.radioremote.parameters.ListButtonsParameter"
+    } ]
+  },
+  "moduleType" : "RADIO_REMOTE",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

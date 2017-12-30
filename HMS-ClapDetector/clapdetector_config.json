@@ -1,0 +1,27 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 3121,
+    "supportedCommands" : [ {
+      "commandUri" : "registerListener",
+      "parameterJson" : "{\"responseUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.clapdetector.parameters.RegisterListenerParameter"
+    }, {
+      "commandUri" : "unregisterListener",
+      "parameterJson" : "{\"responseUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.clapdetector.parameters.UnregisterListenerParameter"
+    }, {
+      "commandUri" : "stop",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "start",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    } ]
+  },
+  "moduleType" : "CLAP_DETECTOR",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 1254,
+    "supportedCommands" : [ {
+      "commandUri" : "clear",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "setBrightness",
+      "parameterJson" : "{\"brightnessLevel\":null}",
+      "parameterClassName" : "de.deeps.hms.ledboard.parameters.SetBrightnessParameter"
+    }, {
+      "commandUri" : "showStaticContent",
+      "parameterJson" : "{\"durationInSeconds\":0,\"content\":null}",
+      "parameterClassName" : "de.deeps.hms.ledboard.parameters.ShowStaticContentParameter"
+    }, {
+      "commandUri" : "showAnimatedContent",
+      "parameterJson" : "{\"repeat\":0,\"content\":null}",
+      "parameterClassName" : "de.deeps.hms.ledboard.parameters.ShowAnimatedContentParameter"
+    } ]
+  },
+  "moduleType" : "LED_BOARD",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

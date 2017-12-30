@@ -1,0 +1,15 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 2316,
+    "supportedCommands" : [ {
+      "commandUri" : "sendWOL",
+      "parameterJson" : "{\"targetMAC\":null,\"targetAddress\":null}",
+      "parameterClassName" : "de.deeps.hms.wol.parameters.SendWOLParameter"
+    } ]
+  },
+  "moduleType" : "WOL",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

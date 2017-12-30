@@ -1,0 +1,22 @@
+package de.deeps.hms;
+
+/**
+ * @author Deeps
+ */
+
+public enum ModuleType {
+	IR_REMOTE,
+	NETWORK_SERVER,
+	LED_BOARD,
+	BT_DISCOVERY,
+	CLAP_DETECTOR,
+	VOICE_RECOGNITION,
+	DELAY,
+	AUDIO_PLAYER,
+	WOL,
+	PC_MANAGER,
+	RULE,
+	LAUNCHER,
+	RADIO_REMOTE,
+	AUDIO_X
+}

@@ -1,0 +1,26 @@
+{
+  "isActive" : false,
+  "condition" : {
+    "comparator" : "EQUALS",
+    "inputClassType" : "",
+    "jsonAttributePath" : "status",
+	"commandURI": "smartBTConnect",
+    "expectedValue" : "true",
+    "attributeDataType" : "BOOLEAN"
+  },
+  "events" : [ {
+    "targetUrl" : "http://192.168.178.96:2316/sendWOL",
+    "content" : {
+      "targetMAC" : "90:2B:34:37:FB:4E",
+      "targetAddress" : "192.168.178.36"
+    }
+  }, {
+    "targetUrl" : "http://192.168.178.96:1254/showStaticContent",
+    "content" : {
+      "durationInSeconds" : 3,
+      "content" : "BT"
+    }
+  } ],
+  "timeout" : 0,
+  "name" : "SmartConnectActivation"
+}

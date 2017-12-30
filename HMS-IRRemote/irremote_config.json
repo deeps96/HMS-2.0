@@ -1,0 +1,23 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 9171,
+    "supportedCommands" : [ {
+      "commandUri" : "pressButton",
+      "parameterJson" : "{\"remoteName\":null,\"buttonName\":null}",
+      "parameterClassName" : "de.deeps.hms.irremote.parameters.PressButtonParameter"
+    }, {
+      "commandUri" : "listRemotes",
+      "parameterJson" : null,
+      "parameterClassName" : null
+    }, {
+      "commandUri" : "listButtons",
+      "parameterJson" : "{\"remoteName\":null}",
+      "parameterClassName" : "de.deeps.hms.irremote.parameters.ListButtonsParameter"
+    } ]
+  },
+  "moduleType" : "IR_REMOTE",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}

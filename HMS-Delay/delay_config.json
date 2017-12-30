@@ -1,0 +1,23 @@
+{
+  "httpConfig" : {
+    "httpServerPort" : 4512,
+    "supportedCommands" : [ {
+      "commandUri" : "delay",
+      "parameterJson" : "{\"delayInMS\":0,\"content\":null,\"targetUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.delay.parameters.DelayParameter"
+    }, {
+      "commandUri" : "timer",
+      "parameterJson" : "{\"executionDate\":null,\"repeatAllMs\":0,\"content\":null,\"targetUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.delay.parameters.TimerParameter"
+    }, {
+      "commandUri" : "stopDelay",
+      "parameterJson" : "{\"targetUrl\":null}",
+      "parameterClassName" : "de.deeps.hms.delay.parameters.StopDelayParameter"
+    } ]
+  },
+  "moduleType" : "DELAY",
+  "networkConfig" : {
+    "portOfAssociatedNetworkServer" : 6666,
+    "tcpServerPort" : 0
+  }
+}
